@@ -1,5 +1,5 @@
 
-
+## algorithm time complexity O(sqrt(N))
 def solution(n):
     prime = 1
     i = 2
@@ -16,4 +16,3 @@ def solution(n):
 
 if __name__ == '__main__':
     print(solution(6008514751433212321321))
-    

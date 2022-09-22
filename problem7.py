@@ -1,7 +1,7 @@
 import math
 
 
-def solution(n=30001):
+def solution(n=10001):
     cnt = 0
     i = 2
     res = []
@@ -17,13 +17,13 @@ def solution(n=30001):
 
 def isprime(n):
     i= 2
-    while i<math.sqrt(n):
+    while i<=math.sqrt(n):
         if n%i ==0:
             return False
         i+=1
     return True
 
 if __name__ == "__main__":
-    print(isprime(22))
-    print(solution(10))
+    #print(isprime(22))
+    #print(solution(10))
     print(solution())
