@@ -13,7 +13,7 @@ def solution(n=10001):
             break
         i += 1
     return res[-1]
-         
+
 
 def isprime(n):
     i= 2
