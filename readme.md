@@ -4,6 +4,7 @@ This is a project for **Alias** to practice the programming with **Math**.
 
 # Example
 - **Prime**
+- **Other math problems**
 
 ```python
 def isprime(n):
