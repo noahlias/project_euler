@@ -21,6 +21,7 @@ This is a project for **Alias** to practice the programming with **Math**.
 | 13  | [Large sum](https://projecteuler.net/problem=13)                          | [Solution](problem13.py) |
 | 14  | [Longest Collatz sequence](https://projecteuler.net/problem=14)           | [Solution](problem14.py) |
 | 15  | [Lattice paths](https://projecteuler.net/problem=15)                      | [Solution](problem15.py) |
+| 57  | [Square root convergents](https://projecteuler.net/problem=57)            | [Solution](problem57.py) |
 
 ## License
 
