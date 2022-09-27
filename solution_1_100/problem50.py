@@ -23,7 +23,7 @@ def solution(n: int):
         n (int): _description_
     """
     i = 2
-    count = 0
+    value = 0
     ans = []
     total = 0
     while True:
@@ -34,14 +34,15 @@ def solution(n: int):
             ans.append(total)
         i += 1
     ans = [0] + ans
-    print(ans)
+    # print(ans)
     for i in range(len(ans)):
         for j in range(i + 1, len(ans)):
             if is_prime(ans[j] - ans[i]):
-                if j - i == 543:
-                    print(j, i, ans[j] - ans[i])
-                count = max(count, j - i)
-    return count
+                # if j - i == 543:
+                #     print(j, i, ans[j] - ans[i])
+                # count = max(count, j - i)
+                value = max(value, ans[j] - ans[i])
+    return value
 
 
 if __name__ == "__main__":
