@@ -1,5 +1,14 @@
-
 def solution(numerator: int = 3, denominator: int = 7, limit: int = 1000000):
+    """Get the solution
+
+    Args:
+        numerator (int, optional): _description_. Defaults to 3.
+        denominator (int, optional): _description_. Defaults to 7.
+        limit (int, optional): _description_. Defaults to 1000000.
+
+    Returns:
+        _type_: _description_
+    """
     max_numerator = 0
     max_denominator = 1
 
@@ -13,5 +22,5 @@ def solution(numerator: int = 3, denominator: int = 7, limit: int = 1000000):
     return max_numerator, max_denominator
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(solution(numerator=3, denominator=7, limit=1000000))

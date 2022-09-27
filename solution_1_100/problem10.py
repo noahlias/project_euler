@@ -2,16 +2,32 @@ import math
 
 
 def solution(n=2000000):
+    """_summary_
+
+    Args:
+        n (int, optional): _description_. Defaults to 2000000.
+
+    Returns:
+        _type_: _description_
+    """
     i = 3
     ans = 0
-    while i<n:
+    while i < n:
         if isprime(i):
             ans += i
         i += 1
     return ans
-         
+
 
 def isprime(n):
+    """_summary_
+
+    Args:
+        n (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     if 1 < n < 4:
         # 2 and 3 are primes
         return True
@@ -25,8 +41,9 @@ def isprime(n):
             return False
     return True
 
+
 if __name__ == "__main__":
-    #print(isprime(4))
-    #print(solution(10))
-    #print(solution(10))
+    # print(isprime(4))
+    # print(solution(10))
+    # print(solution(10))
     print(solution())

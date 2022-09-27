@@ -1,12 +1,20 @@
-def solution(s:str):
-    ans = 0
-    nums = s.split('\n')[:100]
-    #print(nums)
-    #for i in nums:
-        #print(i)
-        #print(int(i)// (10**40))
-        ##print(get_sum_digits(int(i)// (10**40)))
-    return sum( get_sum_digits(int(i)// (10**40)) for i in nums), sum( int(i)// (10**40) for i in nums), sum(int(i) for i in nums)
+def solution(s: str):
+    """_summary_
+
+    Args:
+        s (str): _description_
+
+    Returns:
+        _type_: _description_
+    """
+    nums = s.split("\n")[:100]
+    return (
+        sum(get_sum_digits(int(i) // (10**40)) for i in nums),
+        sum(int(i) // (10**40) for i in nums),
+        sum(int(i) for i in nums),
+    )
+
+
 # def get_first_ten_digits_of_number():
 #     n = 37107287533902102798797998220837590246510135740250
 #     ans = 0
@@ -14,21 +22,27 @@ def solution(s:str):
 #         print(j)
 #         #print( n// (10**j)*(10**(10- (50-j)) ))
 #         ans = n// (10**40) * (10**(10- (50-j)))
-
 #     return ans // (10*40)
 
+
 def get_sum_digits(n):
-    r= 0
-    while n!=0:
-        r = r + n %10
-        n = n//10
+    """_summary_
+
+    Args:
+        n (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
+    r = 0
+    while n != 0:
+        r = r + n % 10
+        n = n // 10
     return r
 
 
-
-
-if __name__ == '__main__':
-    data = '''37107287533902102798797998220837590246510135740250
+if __name__ == "__main__":
+    data = """37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
 74324986199524741059474233309513058123726617309629
 91942213363574161572522430563301811072406154908250
@@ -128,7 +142,7 @@ if __name__ == '__main__':
 72107838435069186155435662884062257473692284509516
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690
-'''
+"""
     print(solution(data))
-    #print(get_sum_digits(5350353422))
-    #print(get_first_ten_digits_of_number())
+    # print(get_sum_digits(5350353422))
+    # print(get_first_ten_digits_of_number())

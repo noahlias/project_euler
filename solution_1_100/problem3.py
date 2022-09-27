@@ -1,6 +1,13 @@
-
 ## algorithm time complexity O(sqrt(N))
 def solution(n):
+    """_summary_
+
+    Args:
+        n (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     prime = 1
     i = 2
     while i * i <= n:
@@ -13,6 +20,5 @@ def solution(n):
     return int(prime)
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(solution(6008514751433212321321))

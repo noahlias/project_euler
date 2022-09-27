@@ -1,6 +1,6 @@
 def solution(limit: int = 1_000_000) -> int:
-    """
-    Returns an integer, the solution to the problem
+    """Returns an integer, the solution to the problem
+
     >>> solution(10)
     31
     >>> solution(100)
@@ -8,7 +8,6 @@ def solution(limit: int = 1_000_000) -> int:
     >>> solution(1_000)
     304191
     """
-
     phi = [i - 1 for i in range(limit + 1)]
 
     for i in range(2, limit + 1):
