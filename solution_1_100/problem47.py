@@ -36,10 +36,26 @@ def divisor(n: int):
             factors.add(i)
     if n > 1:
         factors.add(n)
-    return len(factors)
+    return factors
+
+
+def get_max_divisor_count():
+    """Max divisor count
+
+    [51051,570570,690690,746130,870870,903210,930930]
+    Returns:
+        _type_: _description_
+    """
+    count = 0
+    for i in range(2, 1_000_000 + 1):
+        if len(divisor(i)) == 7:
+            print(i)
+        count = max(count, len(divisor(i)))
+    return count
 
 
 if __name__ == "__main__":
-    print(divisor(646))
-    print(solution(10000, 3))
-    print(solution(1000000, 4))
+    print(divisor(881790))
+    print(get_max_divisor_count())
+    # print(solution(10000, 3))
+    # print(solution(1000000, 4))
