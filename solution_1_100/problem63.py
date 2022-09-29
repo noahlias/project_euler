@@ -1,6 +1,5 @@
 def solution() -> int:
-    """How many n-digit positive integers
-    exist which are also an nth power
+    """How many n-digit positive integersexist which are also an nth power
 
     Formula (9**n) == n
     Returns:
