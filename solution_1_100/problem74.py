@@ -1,5 +1,7 @@
 from math import factorial
 
+FACTORIAL_DICT = {str(i): factorial(i) for i in range(10)}
+
 
 def solution(terms: int) -> int:
     """Get the solution
@@ -24,14 +26,14 @@ def convert_number(n: int):
         _type_: _description_
     """
     count = 1
-    int_data = sum(factorial(int(i)) for i in str(n))
-    data = set()
-    data.add(n)
+    int_data = sum(FACTORIAL_DICT.get(i) for i in str(n))
+    data = {}
+    data[n] = 1
     while count > 0 and int_data not in data:
-        data.add(int_data)
-        int_data = sum(factorial(int(i)) for i in str(int_data))
+        data[int_data] = 1
+        int_data = sum(FACTORIAL_DICT.get(i) for i in str(int_data))
         count += 1
-    return len(data)
+    return len(data.keys())
 
 
 if __name__ == "__main__":
