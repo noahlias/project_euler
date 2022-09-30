@@ -60,6 +60,15 @@ This is a project for **Alias** to practice the programming with **Math**.
 | 50  | [Consecutive prime sum](https://projecteuler.net/problem=50)                 | [Solution](solution_1_100/problem50.py) |
 | 57  | [Square root convergents](https://projecteuler.net/problem=57)               | [Solution](solution_1_100/problem57.py) |
 
+## Special Problems
+
+[**Almost equilateral triangles**](https://projecteuler.net/problem=94)
+
+Use the Matrix Formula to sove this Problem.
+$$
+\left( \begin{matrix} -2 & 1 & 2 \\ -1 & 2 & 2 \\ -2 & 2 & 3 \end{matrix} \right)^k \left( \begin{matrix} 3 \\ 4 \\ 5 \end{matrix} \right)
+$$
+
 ## License
 
 MIT License
